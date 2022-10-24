@@ -92,7 +92,7 @@ form {
 }
 
 form input {
-    background: none;
+    background: #000000;
     font-family: inherit;
     padding: 0px 17px;
     height: 48px;
@@ -103,7 +103,7 @@ form input {
     width: 350px;
     margin-top: 5px;
     border-radius: 50px;
-    color: #111;
+    color: #FFFFFF;
 }
 
 form input:focus {
