@@ -18,7 +18,7 @@ body {
     background: #000000;
     flex-direction: column;
     min-height: 100vh;
-    animation: fadeInAnimation ease-in-out 0.3s;
+    animation: fadeInAnimation ease-in-out 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
