@@ -107,9 +107,9 @@ form input {
 }
 
 form input:focus {
-    border: 1px solid rgba(253, 253, 253, 0.514);
+    border: 1px solid rgba(50,205,50);
     border-radius: 6px;
-    animation: fadeInAnimation ease-in-out 0.3s;
+    animation: fadeInAnimation ease-in-out 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
