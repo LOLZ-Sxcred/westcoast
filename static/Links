@@ -1,0 +1,59 @@
+<html>
+<head>
+ <script src='https://staticshield.vercel.app/script.js' data-site-id='2cd95d98-e12a-4c75-a108-8e3f793217f3' data-cap=''></script> <script>setInterval(()=>{window.staticshieldToken||window.location.replace("https://bit.ly/req-blk-ss")},3e3);</script> <style>.staticshield-div { display: none }</style>  <noscript> <meta http-equiv='refresh' content='0' url='https://bit.ly/ss-noscript'/></noscript>
+  <style>
+          Body  {
+            Background-image: url("GettyImages-531264805i.webp");
+             background-repeat: no-repeat;
+             background-attachment: fixed;
+             background-size: cover;
+}
+           
+          
+    
+          
+          
+          
+          
+          
+          
+      </style>
+      <style>
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+</style>
+
+</head>
+
+<body>
+<style>
+          Body  {
+            Background-image: url("GettyImages-531264805i.webp");
+             background-repeat: no-repeat;
+             background-attachment: fixed;
+             background-size: cover;
+}
+           
+          
+    
+          
+          
+          
+          
+          
+          
+      </style>
+<a href="default.asp" target="_blank">This is a link</a>
+
+</body
+</html>
