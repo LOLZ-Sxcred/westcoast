@@ -2,51 +2,72 @@
 <html>
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body {
-  font-family: "Lato", sans-serif;
-}
-
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
+.navbar {
+  overflow: hidden;
   background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.sidenav a {
-  padding: 8px 8px 8px 32px;
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
-  font-size: 25px;
-  color: #FFFFFF;
-  display: block;
-  transition: 0.3s;
 }
 
-.sidenav a:hover {
-  color: #f1f1f1;
+.dropdown {
+  float: left;
+  overflow: hidden;
 }
 
-.sidenav .closebtn {
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
   position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
 }
 </style>
- 
+
  
  
     <style>
@@ -113,25 +134,42 @@ body {
 </head>
 
 <body>
- <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="Links.html">Links</a>
+  <div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Dropdown
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+     <a href="Links.html">Links</a>
   <a href="oifeoihwfoihwefoihwefoihfoiwheoiqjsoigiwtejvwtfwgfjwvfsgfjwffkfhwdiuwefiuhwdhfiuqwegh7y3873g8dg78bx87387nm923hnex7m27x3m7nx7x2872b6n2ms2.html">Music (Beta)</a>
   <a href="gamesuiwwfueihunfcwhufwiuwehuinewcinchncihnuihuceiwncfifwfcn7f78ftrc3n783cfcnncfncf8c4hcf4hn7n8h7h88ch8h8n74fchn78f4chn78h.html">Games</a>
   <a href="youtube.html">Youtubers</a>
+  </div>
+  </div> 
 </div>
 
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
 
 <script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
 }
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
 }
 </script>
+
    
     <style>
           Body  {
