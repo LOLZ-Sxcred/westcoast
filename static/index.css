@@ -16,6 +16,7 @@
 body {
     margin: 0;
     flex-direction: column;
+    background #000000;
     min-height: 100vh;
     animation: fadeInAnimation ease-in-out 2s;
     animation-iteration-count: 1;
