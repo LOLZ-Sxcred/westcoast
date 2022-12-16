@@ -164,12 +164,3 @@ section h1 {
   font-size: 15em;
   text-align: center;
 }
-section:first-of-type {
-  background-image: url('https://images.unsplash.com/photo-1465411801898-f1a78de00afc?dpr=2&auto=format&fit=crop&w=1500&h=997&q=80&cs=tinysrgb&crop=&bg=');
-}
-section:nth-of-type(2) {
-  background-image: url('https://images.unsplash.com/photo-1469521669194-babb45599def?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=');
-}
-section:last-of-type {
-  background-image: url('https://images.unsplash.com/photo-1494587416117-f102a2ac0a8d?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=');
-}
