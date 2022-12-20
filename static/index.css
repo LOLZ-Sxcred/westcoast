@@ -15,14 +15,14 @@
 
 body {
     margin: 0;
+    background: #111;
+    display: flex;
     flex-direction: column;
-    background #000000;
     min-height: 100vh;
-    animation: fadeInAnimation ease-in-out 2s;
+    animation: fadeInAnimation ease-in-out 0.3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
-
 
 .fa-magnifying-glass {
     color: white;
@@ -43,7 +43,7 @@ body {
 .logo-wrapper .text {
     font-size: 75px;
     font-family: "Roboto";
-    color: #000000;
+    color: #FFF;
 }
 
 .logo-wrapper h1 {
@@ -92,7 +92,7 @@ form {
 }
 
 form input {
-    background: #000000;
+    background: none;
     font-family: inherit;
     padding: 0px 17px;
     height: 48px;
@@ -103,64 +103,13 @@ form input {
     width: 350px;
     margin-top: 5px;
     border-radius: 50px;
-    color: #FFFFFF;
+    color: #FFF;
 }
 
 form input:focus {
-    border: 1px solid rgba(50,205,50);
+    border: 1px solid rgba(253, 253, 253, 0.514);
     border-radius: 6px;
-    animation: fadeInAnimation ease-in-out 0.4s;
-     animation-iteration-count: 1;
+    animation: fadeInAnimation ease-in-out 0.3s;
+    animation-iteration-count: 1;
     animation-fill-mode: forwards;
-}
-
-/* Style the video: 100% width and height to cover the entire window */
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
-
-/* Add some content at the bottom of the video/page */
-.content {
-  position: fixed;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  width: 100%;
-  padding: 20px;
-}
-
-/* Style the button used to pause/play the video */
-#myBtn {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
-}
-
-#myBtn:hover {
-  background: #ddd;
-  color: black;
-}
-html,
-body {
-  height: 100%;
-}
-section {
-  height: 100%;
-  background-attachment: fixed;
-  background-size: cover;
-  display: flex;
-}
-section h1 {
-  margin: auto;
-  color: white;
-  font-size: 15em;
-  text-align: center;
 }
