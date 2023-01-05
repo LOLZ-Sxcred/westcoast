@@ -64,7 +64,7 @@ footer a,
 footer span {
     margin: 0 15px;
     text-decoration: none;
-    color: #FFF;
+    color: #FFFFFF;
     font-size: 15px;
 }
 
@@ -88,28 +88,28 @@ form {
 
 .desc p {
     width: 560px;
-    color: rgba(253, 253, 253, 0.514);
+    color: rgb(255,255,255);
 }
 
 form input {
-    background: none;
+    background: #000000;
     font-family: inherit;
     padding: 0px 17px;
     height: 48px;
-    border: 1px solid rgb(255, 255, 255, .2);
+    border: 1px solid rgb(255, 255, 255);
     color: var(--text-color);
     border-radius: 3px;
     outline: none;
     width: 350px;
     margin-top: 5px;
     border-radius: 50px;
-    color: #FFF;
+    color: #FFFFFF;
 }
 
 form input:focus {
-    border: 1px solid rgba(253, 253, 253, 0.514);
+    border: 1px solid rgba(255, 255, 255);
     border-radius: 6px;
-    animation: fadeInAnimation ease-in-out 0.3s;
+    animation: fadeInAnimation ease-in-out 0.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
