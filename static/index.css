@@ -92,7 +92,7 @@ form {
 }
 
 form input {
-    background: #000000;
+    background: none;
     font-family: inherit;
     padding: 0px 17px;
     height: 48px;
