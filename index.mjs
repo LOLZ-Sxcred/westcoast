@@ -7,6 +7,15 @@ const bare =  new Server('/bare/', '');
 const serve = new nodeStatic.Server('static/');
 
 const server = http.createServer();
+const UltraViolet = require('../');
+const proxy = new UltraViolet({
+   requestMiddleware: [
+    Corrosion.middleware.blacklist([ 
+      '1v1.lol',
+      '1v1.lol',
+    ], 'Page is blocked!'),  
+  ],
+});
 
 server.on('request', (request, response) => {
     if (bare.route_request(request, response)) return true;
