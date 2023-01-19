@@ -19,3 +19,13 @@ function isUrl(val = ''){
     if (/^http(s?):\/\//.test(val) || val.includes('.') && val.substr(0, 1) !== ' ') return true;
     return false;
 };
+
+const Corrosion = require('corrosion');
+const proxy = new Corrosion({
+  requestMiddleware: [
+    Corrosion.middleware.blacklist([ 
+      '1v1.lol',
+      '',
+    ], 'Page is blocked'),  
+  ],
+});
