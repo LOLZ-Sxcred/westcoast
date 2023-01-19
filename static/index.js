@@ -20,12 +20,4 @@ function isUrl(val = ''){
     return false;
 };
 
-const Corrosion = require('corrosion');
-const proxy = new Corrosion({
-  requestMiddleware: [
-    Corrosion.middleware.blacklist([ 
-      '1v1.lol',
-      '',
-    ], 'Page is blocked'),  
-  ],
-});
+
